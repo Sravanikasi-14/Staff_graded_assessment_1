@@ -1,0 +1,47 @@
+1. lsblk
+
+Purpose:
+Displays the available storage devices.
+
+Observation:
+The command displayed the storage devices available in the system.
+
+--------------------------------------------------
+
+2. df -h
+
+Purpose:
+Displays mounted file systems and disk usage in human-readable format.
+
+Observation:
+The command displayed the mounted file systems along with used and available storage.
+
+--------------------------------------------------
+
+3. df -i
+
+Purpose:
+Displays inode usage of the file systems.
+
+Observation:
+The command displayed inode usage information of the mounted file systems.
+
+--------------------------------------------------
+
+4. du -sh .
+
+Purpose:
+Displays the size of the current directory.
+
+Observation:
+The total size of the current directory was displayed.
+
+--------------------------------------------------
+
+5. vi Storage_Assessment_Report.txt
+
+Purpose:
+Created and edited the storage assessment report using the vi editor.
+
+Observation:
+The report was successfully created and saved using the vi editor.
