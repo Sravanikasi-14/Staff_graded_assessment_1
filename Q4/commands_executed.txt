@@ -1,0 +1,77 @@
+1. echo "Linux File I/O Investigation" > sample.txt
+
+Purpose:
+Created a sample text file.
+
+Observation:
+The file was created successfully.
+
+--------------------------------------------------
+
+2. cat sample.txt
+
+Purpose:
+Displayed the contents of the file.
+
+Observation:
+The stored text was displayed correctly.
+
+--------------------------------------------------
+
+3. lsof / ls -l /proc/$$/fd
+
+Purpose:
+Checked the open files and file descriptors.
+
+Observation:
+The command displayed information about open files or file descriptors.
+
+--------------------------------------------------
+
+4. echo "Hello Linux" > output.txt
+
+Purpose:
+Redirected output to a file.
+
+Observation:
+The output was successfully written to output.txt.
+
+--------------------------------------------------
+
+5. echo "Second Line" >> output.txt
+
+Purpose:
+Appended data to the existing file.
+
+Observation:
+The new line was added without removing the previous content.
+
+--------------------------------------------------
+
+6. ls unknownfile 2> error.txt
+
+Purpose:
+Redirected error output to a file.
+
+Observation:
+The error message was stored in error.txt.
+
+--------------------------------------------------
+
+7. cat error.txt
+
+Purpose:
+Displayed the redirected error message.
+
+Observation:
+The error message was shown from the file.
+
+--------------------------------------------------
+
+8. ulimit -a
+
+Purpose:
+Displayed resource limits.
+
+Observation:
+The command showed the current resource limits for the user.

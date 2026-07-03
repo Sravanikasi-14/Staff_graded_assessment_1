@@ -1,0 +1,33 @@
+Question 3 - File System and Link Analysis
+
+Aim:
+To understand the difference between hard links and symbolic links in Linux.
+
+Files Created:
+1. original.txt
+2. hardlink.txt
+3. softlink.txt
+
+Inode Information:
+The original file and hard link had the same inode number.
+The symbolic link had a different inode number.
+
+Comparison:
+Hard Link:
+- Shares the same inode as the original file.
+- Still works even if the original file is deleted.
+
+Symbolic Link:
+- Has a different inode.
+- Points to the original file.
+- Stops working when the original file is deleted.
+
+After Deleting the Original File:
+The hard link still contained the file data.
+The symbolic link showed an error because the original file was removed.
+
+Metadata:
+The stat command was used to view information like inode number, permissions, owner, size, and timestamps.
+
+Conclusion:
+This experiment showed that a hard link stores the same data as the original file, while a symbolic link only points to the original file.

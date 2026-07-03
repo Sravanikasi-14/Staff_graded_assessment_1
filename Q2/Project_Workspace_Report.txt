@@ -1,0 +1,42 @@
+=========================================
+Secure Project Workspace Setup Report
+=========================================
+
+Objective:
+To create a secure project workspace for storing project files and configure appropriate permissions to protect project data.
+
+Directory Structure Created:
+ProjectWorkspace/
+├── Documents/
+│   └── project_plan.txt
+├── SourceCode/
+│   └── main.sh
+└── Backup/
+    └── backup.log
+
+Ownership Details:
+The workspace and its contents are owned by the current user account. Ownership was verified using the 'ls -ld' and 'stat' commands.
+
+Default File Permissions:
+The default permissions assigned by the operating system were observed before making any modifications.
+
+Modified Permissions:
+ProjectWorkspace          : 750
+Documents                 : 750
+SourceCode                : 750
+Backup                    : 700
+project_plan.txt          : 640
+main.sh                   : 750
+backup.log                : 600
+
+Umask Value:
+The current umask value was recorded using the 'umask' command.
+
+How Permissions Protect Project Data:
+• Only the owner has full access to sensitive files.
+• Group members are given limited access where required.
+• Other users are denied access to confidential project information.
+• Restrictive permissions reduce the risk of accidental modification or unauthorized access.
+
+Conclusion:
+The secure project workspace was successfully created. Appropriate ownership and permissions were configured to ensure that project files remain protected while allowing controlled access to authorized users.

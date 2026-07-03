@@ -1,8 +1,28 @@
-Storage Assessment Report
+Question 5 - Storage Health Assessment
 
 Aim:
-To check the storage information of the system.
+To check the storage information of the Linux system.
 
-Storage Information:
-This report contains the storage details collected using Linux commands.
+Storage Devices:
+The available storage devices were checked using the lsblk command.
 
+Mounted File Systems:
+The mounted file systems were displayed using the df -h command.
+
+Disk Usage:
+The disk usage of the current directory was checked using the du -sh command.
+
+Inode Utilization:
+The inode usage was checked using the df -i command.
+
+Storage Health Observation:
+The storage information was displayed successfully. The disk usage and mounted file systems were checked. No major storage issues were observed during the experiment.
+
+Recommendations:
+1. Remove unnecessary files regularly.
+2. Monitor disk usage frequently.
+3. Keep enough free storage space.
+4. Backup important files regularly.
+
+Conclusion:
+The storage information of the system was collected successfully using Linux commands.

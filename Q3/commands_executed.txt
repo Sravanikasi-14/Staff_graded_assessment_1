@@ -1,0 +1,127 @@
+1. echo "This is the original file for link analysis." > original.txt
+
+Purpose:
+Created the original file.
+
+Observation:
+The file was created successfully.
+
+--------------------------------------------------
+
+2. cat original.txt
+
+Purpose:
+Displayed the contents of the file.
+
+Observation:
+The text stored in the file was displayed.
+
+--------------------------------------------------
+
+3. ln original.txt hardlink.txt
+
+Purpose:
+Created a hard link.
+
+Observation:
+The hard link was created successfully.
+
+--------------------------------------------------
+
+4. ln -s original.txt softlink.txt
+
+Purpose:
+Created a symbolic link.
+
+Observation:
+The symbolic link was created successfully.
+
+--------------------------------------------------
+
+5. ls -li
+
+Purpose:
+Displayed inode numbers of all files.
+
+Observation:
+The original file and hard link had the same inode number. The symbolic link had a different inode number.
+
+--------------------------------------------------
+
+6. stat original.txt
+
+Purpose:
+Displayed metadata of the original file.
+
+Observation:
+The command showed file size, permissions, owner, inode number, and timestamps.
+
+--------------------------------------------------
+
+7. stat hardlink.txt
+
+Purpose:
+Displayed metadata of the hard link.
+
+Observation:
+The hard link had the same inode as the original file.
+
+--------------------------------------------------
+
+8. stat softlink.txt
+
+Purpose:
+Displayed metadata of the symbolic link.
+
+Observation:
+The symbolic link pointed to the original file.
+
+--------------------------------------------------
+
+9. rm original.txt
+
+Purpose:
+Deleted the original file.
+
+Observation:
+The original file was removed successfully.
+
+--------------------------------------------------
+
+10. ls -l
+
+Purpose:
+Displayed all remaining files.
+
+Observation:
+The hard link remained available, while the symbolic link pointed to a missing file.
+
+--------------------------------------------------
+
+11. cat hardlink.txt
+
+Purpose:
+Checked the hard link after deleting the original file.
+
+Observation:
+The contents of the file were still available.
+
+--------------------------------------------------
+
+12. cat softlink.txt
+
+Purpose:
+Checked the symbolic link after deleting the original file.
+
+Observation:
+The command showed an error because the original file no longer existed.
+
+--------------------------------------------------
+
+13. stat hardlink.txt
+
+Purpose:
+Displayed metadata of the hard link after deleting the original file.
+
+Observation:
+The hard link still existed and contained the file information.

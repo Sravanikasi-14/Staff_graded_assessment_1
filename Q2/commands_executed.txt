@@ -1,0 +1,100 @@
+1. mkdir ProjectWorkspace
+Purpose:
+Created the main project workspace directory.
+
+Observation:
+A new directory named ProjectWorkspace was successfully created.
+
+--------------------------------------------------
+
+2. mkdir ProjectWorkspace/Documents
+mkdir ProjectWorkspace/SourceCode
+mkdir ProjectWorkspace/Backup
+
+Purpose:
+Created subdirectories for documents, source code, and backups.
+
+Observation:
+The project workspace was organized into separate directories for better file management.
+
+--------------------------------------------------
+
+3. touch ProjectWorkspace/Documents/project_plan.txt
+touch ProjectWorkspace/SourceCode/main.sh
+touch ProjectWorkspace/Backup/backup.log
+
+Purpose:
+Created sample files inside each project directory.
+
+Observation:
+The required project files were successfully created.
+
+--------------------------------------------------
+
+4. ls -R ProjectWorkspace
+
+Purpose:
+Displayed the complete directory structure.
+
+Observation:
+The output confirmed that all directories and files were created successfully.
+
+--------------------------------------------------
+
+5. ls -lR ProjectWorkspace
+
+Purpose:
+Displayed detailed file permissions before modification.
+
+Observation:
+The default permissions assigned by the operating system were displayed.
+
+--------------------------------------------------
+
+6. ls -ld ProjectWorkspace
+
+Purpose:
+Displayed ownership information for the workspace.
+
+Observation:
+The owner and group associated with the workspace were successfully identified.
+
+--------------------------------------------------
+
+7. umask
+
+Purpose:
+Displayed the default permission mask used while creating files and directories.
+
+Observation:
+The current umask value determines the default permissions assigned to newly created files.
+
+--------------------------------------------------
+
+8. chmod
+
+Purpose:
+Modified file and directory permissions to improve security.
+
+Observation:
+Permissions were successfully changed according to the required access policy.
+
+--------------------------------------------------
+
+9. ls -lR ProjectWorkspace
+
+Purpose:
+Verified permissions after modification.
+
+Observation:
+The updated permissions matched the values assigned using the chmod command.
+
+--------------------------------------------------
+
+10. stat ProjectWorkspace
+
+Purpose:
+Displayed detailed metadata of the workspace.
+
+Observation:
+The command displayed ownership, timestamps, inode information, and permission details of the workspace.

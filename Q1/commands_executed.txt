@@ -1,0 +1,57 @@
+1. whoami
+
+Purpose:
+Displays the current username.
+
+Observation:
+The username "SRAVANI" was displayed.
+
+--------------------------------------------------
+
+2. id
+
+Purpose:
+Displays the user ID and group information.
+
+Observation:
+The UID and GID of the current user were displayed.
+
+--------------------------------------------------
+
+3. echo $SHELL
+
+Purpose:
+Displays the current shell.
+
+Observation:
+The current shell was /usr/bin/bash.
+
+--------------------------------------------------
+
+4. pwd
+
+Purpose:
+Displays the current working directory.
+
+Observation:
+The command showed the current Q1 directory.
+
+--------------------------------------------------
+
+5. ls -la
+
+Purpose:
+Lists all files and directories.
+
+Observation:
+The files and folders inside the workspace were displayed.
+
+--------------------------------------------------
+
+6. ping google.com
+
+Purpose:
+Checks network connectivity.
+
+Observation:
+The system successfully connected to Google's server with no packet loss.
