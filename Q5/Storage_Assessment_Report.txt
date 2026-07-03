@@ -1,0 +1,8 @@
+Storage Assessment Report
+
+Aim:
+To check the storage information of the system.
+
+Storage Information:
+This report contains the storage details collected using Linux commands.
+
